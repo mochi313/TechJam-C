@@ -1,0 +1,10 @@
+.onClick {
+    stroke: #000;
+    transition: all .1s;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.onClick:active {
+    stroke: #d5d5d5;
+}

@@ -1,0 +1,51 @@
+.title {
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #83d3e2;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.mainText {
+    font-size: 40px;
+    font-weight: 400;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-family: 'SF Pro', sans-serif;
+    white-space: nowrap;
+}
+
+.mainTextRight {
+    font-size: 60px;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-family: 'SF Pro', sans-serif;
+    white-space: nowrap;
+}
+
+.mainText span, .mainTextRight span {
+    font-size: 16px;
+}
+
+.containerMiddle {
+    width: calc(50% - 30px);
+    background-color: #fef;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #fef;
+    aspect-ratio: 1 / 1 ;
+    border-radius: 8px;
+    position: relative;
+}
+
+.containerBig {
+    width: calc(100% - 20px);
+    aspect-ratio: 1 / 0.435 ;
+}

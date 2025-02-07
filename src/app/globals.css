@@ -1,0 +1,42 @@
+/* すべてのデバイスで適用されるスタイル */
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #83d3e2;
+  overflow: auto; /* スクロールを無効化 */
+  height: auto;    /* ビューポートの高さに合わせる */
+}
+
+p {
+  margin:0
+}
+
+/* モバイルファーストで設定 */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* タブレット以上向け */
+@media (min-width: 769px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/fonts/sf-pro/SFProDisplay-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/fonts/sf-pro/SFProDisplay-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
