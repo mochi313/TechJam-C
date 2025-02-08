@@ -4,9 +4,10 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import BarChart from '../../components/bar';
 import { ShopList } from '../../components/shop';
 import { Title } from '../../components/header';
+import { BaseLayout } from '../../components/baselayout';
 
 export default function Home() {
-    return <>
+    return <BaseLayout>
     <Title title="ショップ"/>
     <div style={{display:"flex",flexWrap:"wrap",gap:"20px",marginTop:"10px"}}>
         <ShopList items={[
@@ -22,5 +23,5 @@ export default function Home() {
             },
         ]} />
     </div>
-</>
+</BaseLayout>
 }

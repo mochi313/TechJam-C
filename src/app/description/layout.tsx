@@ -1,10 +1,6 @@
-import { Header } from "../components/header";
-import { MenuBar } from "../components/menubar";
-import { ProgressBar, StepsPer } from "../components/progress";
-import { Lv } from "../components/view";
-import "./globals.css";
+import "../globals.css";
 
-export default function RootLayout({
+export default function DescriptionLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

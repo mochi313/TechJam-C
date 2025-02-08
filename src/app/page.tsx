@@ -1,9 +1,10 @@
 import { Condition, ProgressBar, StepsPer2 } from "../components/progress";
 import Image from 'next/image';
 import ms from "./page.module.css"
+import { BaseLayout } from "../components/baselayout";
 
 export default function Home() {
-  return (<>
+  return (<BaseLayout>
     <Image
     src="/LEAP_.png"
     alt="Description"
@@ -32,5 +33,5 @@ export default function Home() {
     </div>
     <p style={{color:"#f2bf19"}}>不健康</p>
   </div>
-</>);
+</BaseLayout>);
 }
