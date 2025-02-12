@@ -8,6 +8,7 @@ const withPWA = nextPWA({
 
 const nextConfig = withPWA({
   reactStrictMode: true,
+  poweredByHeader: false
 });
 
 export default nextConfig;
