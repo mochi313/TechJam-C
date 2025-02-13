@@ -27,16 +27,32 @@ export const Te = ({ children, speed = 100, delay = 0}: { children: string, spee
     return <span className={`${!toggle && ms.typing} ${ms.sp}`}>{displayedText}</span>;
 };
 
-export const TeDelay = ({ children, speed = 100, delay = 0}: { 
+export const TeDelay = ({ children, speed = 100, delay = 0}: {
     children: string,
     speed?: number,
     delay?:number
 }) => {
     const [toggle, setToggle] = useState(false)
     useEffect(() => {
-        setInterval(() => {
+        const delayTimeout = setTimeout(() => {
             setToggle(true)
+            console.log("true")
         },delay)
-    },[TeDelay])
+        // return () => {
+        //     clearTimeout(delayTimeout);
+        // }
+    },[delay])
     return (toggle && <Te children={children} speed={speed}/>)
+}
+
+export const TeDCal = ({texts, speed}:{
+    texts:Array<string>,
+    speed:number
+}) => {
+    return <>{
+        texts.map((t,i) => {
+            const delay = i !== 0 ? texts[i - 1].length * speed : 0;
+            return <span key={i+delay}><TeDelay children={t} delay={delay} speed={speed} /><br /></span>
+        })
+    }</>
 }

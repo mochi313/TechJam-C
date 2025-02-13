@@ -1,0 +1,9 @@
+.whiteBar{
+    width: 100vw;
+    height: 50px;
+    transform: rotate(-45deg);
+    background-color: white;
+    position: fixed;
+    top: 400px;
+    z-index: -1;
+}
