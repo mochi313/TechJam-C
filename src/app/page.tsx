@@ -5,6 +5,9 @@ import { BaseLayout } from "../components/baselayout";
 
 export default function Home() {
   return (<BaseLayout>
+  <div className={ms.alert}>
+    展示の際は<a href="/description">こちら</a>のページを展示してください。
+  </div>
     <Image
     src="/LEAP_.png"
     alt="Description"
